@@ -1,0 +1,198 @@
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #05264b;
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  color: gold;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: gold;
+  color: #222;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.hero-text .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.room-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.room-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  padding: 20px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+.room-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.room-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background: gold;
+  color: #222;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.room-card button:hover {
+  background: #05264b;
+  color: #fff;
+}
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('hotel.jpg') no-repeat center center/cover;
+}
+
+.login-box {
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #05264b;
+}
+
+.login-box label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: #05264b;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: gold;
+  color: #222;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #05264b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
